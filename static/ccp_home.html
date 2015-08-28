@@ -11,15 +11,13 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <link rel="stylesheet" href="css/ccp.css">
   <link rel="stylesheet" href="css/owl.carousel.css">
+  <link rel="stylesheet" href="css/owl.transitions.css">
 
 
   <!--[if lt IE 9]>
       <script src="https://cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-
-  <script src="js/vendor/jquery-1.11.2.min.js" charset="utf-8"></script>
-  <script src="js/vendor/owl.carousel.min.js" charset="utf-8"></script>
 </head>
 
 <body>
@@ -37,7 +35,7 @@
           <div class="row">
             <div class="col-xs-4">
               <div class="sub-header">
-                Get Help and contribute with your knowledge. Find here some ways how you can do it.
+                Get help and contribute with your knowledge. Find here some ways how you can do it.
               </div>
             </div>
             <div class="col-xs-8">
@@ -62,46 +60,62 @@
         <div class="main-menu">
           <div class="row">
             <div class="col-xs-3">
-              <div class="main-menu-opt documentation">
-                <h2>Documentation</h2>
-              </div>
+              <a href="https://help.pentaho.com/Documentation" target="_blank">
+                <div class="main-menu-opt documentation">
+                  <h2>Documentation</h2>
+                </div>
+              </a>
             </div>
             <div class="col-xs-3">
-              <div class="main-menu-opt forums">
-                <h2>Forums</h2>
-              </div>
+              <a href="#">
+                <div class="main-menu-opt forums">
+                  <h2>Forums</h2>
+                </div>
+              </a>
             </div>
             <div class="col-xs-3">
-              <div class="main-menu-opt mailing-list">
-                <h2>Mailing List</h2>
-              </div>
+              <a href="#">
+                <div class="main-menu-opt mailing-list">
+                  <h2>Mailing List</h2>
+                </div>
+              </a>
             </div>
             <div class="col-xs-3">
-              <div class="main-menu-opt blogs">
-                <h2>Blogs</h2>
-              </div>
+              <a href="#">
+                <div class="main-menu-opt blogs">
+                  <h2>Blogs</h2>
+                </div>
+              </a>
             </div>
           </div>
           <div class="row">
             <div class="col-xs-3">
-              <div class="main-menu-opt marketplace">
-                <h2>Marketplace</h2>
-              </div>
+              <a href="#">
+                <div class="main-menu-opt marketplace">
+                  <h2>Marketplace</h2>
+                </div>
+              </a>
             </div>
             <div class="col-xs-3">
-              <div class="main-menu-opt report-bug">
-                <h2>Report a Bug</h2>
-              </div>
+              <a href="#">
+                <div class="main-menu-opt report-bug">
+                  <h2>Report a Bug</h2>
+                </div>
+              </a>
             </div>
             <div class="col-xs-3">
-              <div class="main-menu-opt source-code">
-                <h2>Get the Source</h2>
-              </div>
+              <a href="#">
+                <div class="main-menu-opt source-code">
+                  <h2>Get the Source</h2>
+                </div>
+              </a>
             </div>
             <div class="col-xs-3">
-              <div class="main-menu-opt translate">
-                <h2>Translate</h2>
-              </div>
+              <a href="#">
+                <div class="main-menu-opt translate">
+                  <h2>Translate</h2>
+                </div>
+              </a>
             </div>
           </div>
         </div>
@@ -109,38 +123,53 @@
     </div>
 
     <div class="row">
-      <div class="col-xs-6 footer-links pull-left">
-        <span class="footer-label">Sites:</span>
-        <ul class="footer-links">
-          <li>
-            <a href="http://www.pentaho.com/blog" target="_blank">Blog</a>
-          </li>
-          <li>
-            <a href="http://community.pentaho.com/" target="_blank">Community</a>
-          </li>
-          <li>
-            <a href="https://help.pentaho.com/Documentation" target="_blank">Documentation</a>
-          </li>
-          <li>
-            <a href="http://wiki.pentaho.com/display/COM/Community+Wiki+Home" target="_blank">Wiki</a>
-          </li>
-        </ul>
-      </div>
-      <div class="col-xs-6">
-        <a href="" class="try-pentaho-btn pull-right">Try Enterprise Edition</a>
+      <div class="footer">
+        <div class="col-xs-6 footer-links pull-left">
+          <span class="footer-label">Sites:</span>
+          <ul class="footer-links">
+            <li>
+              <a href="http://www.pentaho.com/blog" target="_blank">Blog</a>
+            </li>
+            <li>
+              <a href="http://community.pentaho.com/" target="_blank">Community</a>
+            </li>
+            <li>
+              <a href="https://help.pentaho.com/Documentation" target="_blank">Documentation</a>
+            </li>
+            <li>
+              <a href="http://wiki.pentaho.com/display/COM/Community+Wiki+Home" target="_blank">Wiki</a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-xs-6">
+          <a href="" class="try-pentaho-btn pull-right">Try Enterprise Edition</a>
+        </div>
       </div>
     </div>
   </div>
 
   <script src="http://localhost:35729/livereload.js" charset="utf-8"></script>
+
+  <script src="js/vendor/jquery-1.11.2.min.js" charset="utf-8"></script>
+  <script src="js/vendor/owl.carousel.min.js" charset="utf-8"></script>
   <script>
     $(document).ready(function() {
+
+      // shuffle the slider 'cards'
+      var parent = $("#home-slideshow");
+      var divs = parent.children();
+      while (divs.length) {
+        parent.append(divs.splice(Math.floor(Math.random() * divs.length), 1)[0]);
+      }
+
       $("#home-slideshow").owlCarousel({
         navigation: false,
         slideSpeed: 300,
         paginationSpeed: 400,
         singleItem: true,
-        autoPlay: 5000
+        autoPlay: 30000,
+        mouseDrag: false,
+        transitionStyle: "fade"
       });
     });
   </script>
