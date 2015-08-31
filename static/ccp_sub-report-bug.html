@@ -9,7 +9,7 @@
 
 
   <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/ccp.css">
+  <link rel="stylesheet" href="css/ccp-crystal.css">
   <link rel="stylesheet" href="css/owl.carousel.css">
   <link rel="stylesheet" href="css/dropdown.css">
 
@@ -27,7 +27,7 @@
   <div class="container">
     <div class="row">
       <div class="col-xs-12">
-        <div class="ccp-header blue">
+        <div class="ccp-header">
           <div class="row">
             <div class="col-xs-11">
               <div id="dl-menu" class="dl-menuwrapper pull-left">
@@ -36,14 +36,13 @@
                 <ul class="dl-menu">
                   <li>
                     <a href="index.html" class="home">Home</a>
-                    <a href="http://help.pentaho.com/" target="_blank" class="documentation external">Documentation</a>
+                    <a href="ccp_sub-documentation.html" class="documentation">Documentation</a>
                     <a href="ccp_sub-forums.html" class="forums">Forums</a>
                     <a href="ccp_sub-mailing-lists.html" class="mailing-lists">Mailing List</a>
                     <a href="ccp_sub-blogs.html" class="blogs">Blogs</a>
                     <a href="ccp_sub-marketplace.html" class="marketplace">Marketplace</a>
-                    <a href="ccp_sub-report-bug.html" class="report-bug">Report a Bug</a>
-                    <a href="ccp_sub-get-the-source.html" class="get-the-source external">Get the Source</a>
-                    <a href="#" class="translate">Translate</a>
+                    <a href="#" class="report-bug">Report a Bug</a>
+                    <a href="ccp_sub-get-the-source.html" class="get-the-source">Get the Source</a>
                   </li>
                 </ul>
               </div>
@@ -60,19 +59,24 @@
     <div class="row">
       <div class="col-xs-12">
 
-          <div class="row">
-
-            <div class="col-xs-12">
-              <div class="sub-page-sub-header">
-                <p>
-                  Found something you think it's a bug? Have a feature request? <br>
-                  Report it on our <a href="http://jira.pentaho.com/" target="_blank">bug tracking system</a>, and here are some links to the most common ones
-                </p>
-
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="sub-page-sub-header">
+              <div class="row">
+                <div class="col-xs-8">
+                  <p style="padding-top: 0">
+                    Found something you think it's a bug? Have a feature request? <br>
+                    Report it on our <a href="http://jira.pentaho.com/" target="_blank">bug tracking system</a>, and here are some links to the most common ones
+                  </p>
+                </div>
+                <div class="col-xs-4">
+                <a href="#" class="live-chat-btn" onclick="CCP.liveChat()">Live Chat</a>
+                </div>
               </div>
-            </div>
 
+            </div>
           </div>
+        </div>
 
       </div>
     </div>
@@ -123,12 +127,6 @@
             <li>
               <a href="http://community.pentaho.com/" target="_blank">Community</a>
             </li>
-            <li>
-              <a href="https://help.pentaho.com/Documentation" target="_blank">Documentation</a>
-            </li>
-            <li>
-              <a href="http://wiki.pentaho.com/display/COM/Community+Wiki+Home" target="_blank">Wiki</a>
-            </li>
           </ul>
         </div>
         <div class="col-xs-4">
@@ -156,6 +154,7 @@
 
     });
   </script>
+  <script src="js/main.js" charset="utf-8"></script>
 </body>
 
 </html>
