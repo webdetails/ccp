@@ -206,7 +206,6 @@ div.footer-links{
 
 span.footer-label{
   cursor: default;
-  padding-left: 15px;
 }
 
 div.footer-links{
@@ -266,8 +265,15 @@ a.try-pentaho-btn:hover{
 }
 
 .footer{
-  margin-top: 60px;
-  margin-bottom: 180px;
+
+  background: rgba(255,255,255,1);
+  background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,0.73) 80%, rgba(255,255,255,0) 100%);
+  background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,1)), color-stop(80%, rgba(255,255,255,0.73)), color-stop(100%, rgba(255,255,255,0)));
+  background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,0.73) 80%, rgba(255,255,255,0) 100%);
+  background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,0.73) 80%, rgba(255,255,255,0) 100%);
+  background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,0.73) 80%, rgba(255,255,255,0) 100%);
+  background: linear-gradient(to top, rgba(255,255,255,1) 0%, rgba(255,255,255,0.73) 80%, rgba(255,255,255,0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=0 );
 }
 
 /*sub page*/
@@ -390,4 +396,14 @@ a.sub-menu-btn{
 .footer-social-item.linkedin {
     background-image: url(../img/social-linkedin.svg);
     background-position: 9px center;
+}
+
+.fixed-top-live-chat{
+  position: fixed;
+  top: 0 !important;
+  z-index: 999999;
+  padding-top: 10px;
+  margin-left: 700px;
+}
+
 }

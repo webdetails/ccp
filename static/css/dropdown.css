@@ -101,10 +101,23 @@
 	text-decoration: none;
 }
 
+ul.dl-menu li a.external {
+	background: url(../img/new-window.svg) no-repeat 215px 10px;
+}
+
+ul.dl-menu li a.external {
+	background: url(../img/new-window.svg) no-repeat 215px 9px;
+}
+
 .no-touch .dl-menuwrapper li a:hover,
 .no-touch .dl-menuwrapper li a.active {
-	background: #005da6;
+	background-color: #005da6;
 	color: #FFFFFF;
+}
+
+ul.dl-menu li a.external:hover,
+ul.dl-menu li a.external.active{
+	background: #005da6 url(../img/new-window.svg) no-repeat 215px -25px;
 }
 
 .dl-menuwrapper li.dl-back > a {
