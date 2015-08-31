@@ -41,6 +41,7 @@ body{
   -ms-user-select: none;
   user-select: none;
   cursor: default;
+  background: inherit !important;
 }
 
 .container{
@@ -182,11 +183,11 @@ body.sub .ccp-header{
 }
 
 .main-menu-opt.marketplace:after{
-  background: url(../img/icons.svg) no-repeat -15px -220px;
+  background: url(../img/icons.svg) no-repeat -20px -220px;
 }
 
 .main-menu-opt.report-bug:after{
-  background: url(../img/icons.svg) no-repeat -235px -220px;
+  background: url(../img/icons.svg) no-repeat -230px -220px;
 }
 
 .main-menu-opt.source-code:after{
@@ -205,6 +206,7 @@ div.footer-links{
 
 span.footer-label{
   cursor: default;
+  padding-left: 15px;
 }
 
 div.footer-links{
@@ -244,9 +246,9 @@ ul.footer-links li a:hover{
 }
 
 a.try-pentaho-btn{
-  padding: 13px 30px;
+  padding: 10px 30px;
   border: none;
-  font-size: 18px;
+  font-size: 16px;
   background-color: #005da6;
   color: #FFFFFF;
 
@@ -254,6 +256,8 @@ a.try-pentaho-btn{
   -webkit-transition: background-color .1s ease;
   -moz-transition: background-color .1s ease;
   -o-transition: background-color .1s ease;
+
+  margin-top: 5px;
 }
 
 a.try-pentaho-btn:hover{
@@ -344,4 +348,46 @@ a.sub-menu-btn{
   width: 20px;
   height: 20px;
   background: url(../img/arrow.svg) no-repeat center center;
+}
+
+.footer-social{
+  margin-top: 10px;
+}
+
+.footer-social-item{
+  position: relative;
+  width: 34px;
+  height: 34px;
+  display: inline-block;
+  margin-left: 10px;
+  background-size: auto 50%;
+  background-color: #999999;
+  background-repeat: no-repeat;
+  background-position: center center;
+  border-radius: 50%;
+}
+
+.footer-social-item:hover{
+  background-color: #666666;
+}
+
+.footer-social-item:first-child{
+  margin-left: 0px;
+}
+
+.footer-social-item.gplus {
+    background-image: url(../img/social-gplus.svg);
+}
+
+.footer-social-item.twitter {
+    background-image: url(../img/social-twitter.svg);
+}
+
+.footer-social-item.facebook {
+    background-image: url(../img/social-facebook.svg);
+}
+
+.footer-social-item.linkedin {
+    background-image: url(../img/social-linkedin.svg);
+    background-position: 9px center;
 }
