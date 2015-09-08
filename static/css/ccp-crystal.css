@@ -303,6 +303,9 @@ a.live-chat-btn:hover{
   background: #34913f url(../img/chat-icon.svg) no-repeat 10px center;
 }
 
+.sub a.live-chat-btn{
+  right: 15px;
+}
 
 .footer{
   background: rgba(255,255,255,1);
@@ -369,10 +372,10 @@ a.live-chat-btn:hover{
         transform: rotate(-45deg);
 }
 
-body.dl-active .close-btn{
+/* body.dl-active .close-btn{
   opacity: 0;
   display: none;
-}
+} */
 
 
 a.sub-menu-btn{
